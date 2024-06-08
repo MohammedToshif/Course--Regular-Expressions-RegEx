@@ -69,3 +69,107 @@ e.g => it allows us to check a form field to try and match a valid email address
 6.) [0-9]{5,}   => minimum 5 character, maximum infinity
 
 */
+
+
+
+//-----(06) - Meta characters
+
+/*
+    //      .* = any character
+
+    \d  => match any digit character(same as [0-9])
+
+    \w  => match any word character (a-z, A-Z, 0-9 and _'s)
+
+    \s  => match a whitspace character (spaces, tabs, etc)
+
+    \t  => match a tab character only
+
+
+    d --    => matches the literal character, 'd'
+
+    \d --   => matches any digit character
+
+
+    prectice :-
+    \d\s\w      => 5 b (match = 0-3)
+
+    \d{3}\s\w{5}    => 123 tosif    (match = 0-9)
+                    => 987 hello    (match = 10-19)
+*/
+
+
+
+
+//-----(07) - special character
+
+
+/*
+    '+'     => The one-or-more quantifier
+
+    '\'     => The escape character
+
+    '[]'    => The character set
+
+    '[^]'   => The negate symbol in a character set
+
+    '?'     => The zero-or-one quantifier (makes a preceding char optional)
+
+    '.'     => Any character whatsover (except the newline character)
+
+    '*'     => The 0-or-more qunatifier (a bit like +)
+
+
+    // in prectice
+
+    a[a-z]?     => (match = ag - 0-2)
+
+    car.        => (. dot means type any character)
+                => (match = cars - 0-4)
+
+    .+          => type any string, character any length long        (toshif ashrfi 9261212612)
+
+
+    a[a-z]*     => aabcdefghijklmnopqrstuvwxyz (match 0-27)
+
+    a[a-z]*     => aa8 (match = 0-2 - aa)
+
+*/
+
+
+
+//-----(08) - starting & Ending patterns
+
+
+/*
+    ^[a-z]{5}$      => (hello 0-5)
+          => basically its used in form field     
+*/
+
+
+
+//-----(09) - Alternate character
+
+
+/*
+    p|t     => (p or t m se koi ek character dene pr hi match karega)
+     p|t = hello toshif from pali 
+     match 1 = 6-7 = t
+     match 2 = 18-19 = p
+
+     (p|t)yre   => pyre (match 1 = 0-4 = pyre)
+                        (group 1 = 0-1 = p)
+
+                => tyre (match 1 = 0-4 = pyre)
+                        (group 1 = 0-1 = p)     
+                        
+                        
+    (pet|toy|crazy)? rabbit                
+    match - (pat rabbit, toy rabbit craazy rabbit)
+    
+    not match - (hello rabbit)
+*/
+
+
+
+//-----(10) - Creating a Form(start Code Tour)

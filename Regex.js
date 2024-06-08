@@ -173,3 +173,57 @@ e.g => it allows us to check a form field to try and match a valid email address
 
 
 //-----(10) - Creating a Form(start Code Tour)
+
+// HTML work in index.html file
+
+
+
+//-----(11) - Making RegEx in JavaScript
+
+// JS work in validation.js file
+
+
+
+//-----(12) - Telephone RegEx
+
+// JS work in validation.js file
+
+
+
+//-----(13) - Testing a RegEx pattern
+
+// JS work in validation.js file
+
+
+
+//-----(14) - Matching a username & password
+
+// JS work in validation.js file
+
+
+
+//-----(15) - Matching an Email Address
+
+// Email RegEx
+
+/*
+    1           2           3         4
+(yourname) @ (domain) . (extension)(.again)
+
+ (theboss) @ (thenetninja) . (co) (.uk)
+
+ 1.) any letters, numbers, dots and/or hyphens
+ 2.) any letters, numbers and/or hyphens
+ 3.) any letters
+ 4.) a dot (.) then any letters
+
+
+// JS work in validation.js file
+
+ */
+
+
+//-----(16) - Finishing Touches
+
+// CSS work in style.css file
+
